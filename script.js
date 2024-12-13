@@ -107,7 +107,7 @@ document.getElementById("continue-button").onclick = () => {
 
 function displayResults(lastScore) {
     const quizContainer = document.getElementById("quiz-container");
-    quizContainer.innerHTML = "<h2>Quiz Tamamlandı!</h2>";
+    quizContainer.innerHTML = "<h2>Tamamlandı!</h2>";
     
     userAnswers.forEach((answer, index) => {
         const questionText = questions[index].question;
