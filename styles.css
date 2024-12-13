@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg'); 
+    background-color: #d16500;
+    background-size: cover; /* Resmi kapsayacak şekilde boyutlandır */
+    background-position: center; /* Resmi ortala */
+    background-repeat: no-repeat; /* Resmin tekrarlanmaması için */
+}
+
+
+
+#question {
+    color: white; /* Soru metninin rengi beyaz */
+    opacity: 1; /* Soru metni tam opak */
+}
+
+#answers {
+    opacity: 1; /* Cevaplar tam opak */
+}
+button {
+    margin: 10px 0; /* Üst ve alt boşluk */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    opacity: 1 ;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:nth-child(1) {
+    background-color: #ffbb00; /* Yeşil */
+    color: white;
+    margin-right: 5px;
+}
+
+button:nth-child(2) {
+    background-color: #ffbb00; /* Mavi */
+    color: white;
+    margin-right:5px;
+}
+
+button:nth-child(3) {
+    background-color: #ffbb00; /* Kırmızı */
+    color: white;
+}
+
+#continue-button {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+
+    border-radius: 5px; /* Kenarları yuvarlaştır */
+    padding: 10px 15px; /* İç boşluk ekle */
+
+    transition: background-color 0.3s, color 0.3s; /* Geçiş efekti ekle */
+}
+
+
+.selected {
+    background-color: #ffdd57; /* Seçilen butonun arka plan rengi */
+    border: 2px solid #fff; /* Seçilen butonun kenarlığı */
+    transform: scale(1.05); /* Seçilen butonu biraz büyüt */
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Geçiş süresi ve tipi */
+}
+
+.fade.show {
+    opacity: 1; /* Görünür hale gelince opaklık 1 olacak */
+}
+
+
+
+
+#quiz-container {
+    background: rgba(0, 0, 0, 0.6); /* Arka planı yarı saydam siyah yap */
+    color: white;
+    padding: 50px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
