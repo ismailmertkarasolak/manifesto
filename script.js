@@ -128,7 +128,7 @@ function displayResults(lastScore) {
 
 function displayResults(lastScore) {
     const quizContainer = document.getElementById("quiz-container");
-    quizContainer.innerHTML = "<h2>Quiz Tamamlandı!</h2>";
+    quizContainer.innerHTML = "<h2>Tamamlandı!</h2>";
     
     userAnswers.forEach((answer, index) => {
         const questionText = questions[index].question;
@@ -158,7 +158,7 @@ function displayResults(lastScore) {
     const button2 = document.createElement("button");
     button2.textContent = "Telefon";
     button2.onclick = () => {
-        window.location.href = "+905446683345";
+        window.location.href = "tel:+905446683345";
     };
     buttonContainer.appendChild(button2);
 
